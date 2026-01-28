@@ -3,11 +3,23 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { StudentProvider } from './context/StudentContext';
+import { RequestsProvider } from './context/RequestsContext';
+import { StaffProvider } from './context/StaffContext';
+import { NotificationsProvider } from './context/NotificationsContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <StudentProvider>
+      <RequestsProvider>
+        <StaffProvider>
+          <NotificationsProvider>
+            <App />
+          </NotificationsProvider>
+        </StaffProvider>
+      </RequestsProvider>
+    </StudentProvider>
   </React.StrictMode>
 );
 
