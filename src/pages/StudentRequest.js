@@ -6,7 +6,6 @@ import NotificationsContext from '../context/NotificationsContext';
 import '../App.css';
 
 function generateAISummary(reason, type, duration) {
-  const reasonLower = reason.toLowerCase();
   let summary = '';
   
   if (type === 'Leave') {
