@@ -7,6 +7,7 @@ import { StudentProvider } from './context/StudentContext';
 import { RequestsProvider } from './context/RequestsContext';
 import { StaffProvider } from './context/StaffContext';
 import { NotificationsProvider } from './context/NotificationsContext';
+import { AttendanceProvider } from './context/AttendanceContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,9 +15,11 @@ root.render(
     <StudentProvider>
       <RequestsProvider>
         <StaffProvider>
-          <NotificationsProvider>
-            <App />
-          </NotificationsProvider>
+          <AttendanceProvider>
+            <NotificationsProvider>
+              <App />
+            </NotificationsProvider>
+          </AttendanceProvider>
         </StaffProvider>
       </RequestsProvider>
     </StudentProvider>

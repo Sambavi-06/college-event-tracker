@@ -12,6 +12,7 @@ export default function LoginSelection() {
         <p className="role-sub">Choose one to continue</p>
         <div className="role-buttons">
           <button className="role-button" onClick={() => navigate('/student-login')}>Student</button>
+          <button className="role-button" onClick={() => navigate('/staff-login?role=Staff')}>Staff</button>
           <button className="role-button" onClick={() => navigate('/staff-login?role=Advisor')}>Advisor</button>
           <button className="role-button" onClick={() => navigate('/staff-login?role=HOD')}>HOD</button>
           <button className="role-button" onClick={() => navigate('/staff-login?role=Principal')}>Principal</button>

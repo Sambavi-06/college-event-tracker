@@ -174,3 +174,20 @@
   .dashboard-header > div { flex-direction:column; align-items:flex-start; }
 }
 
+/* Attendance section styles */
+.attendance-section { margin-top:12px; padding-top:12px; border-top:1px solid #e3e8ef; }
+
+.attendance-marked { margin:0; }
+
+.attendance-badge { display:inline-block; padding:6px 14px; border-radius:20px; font-weight:600; font-size:0.9rem; }
+.attendance-badge.present { background:#d4edda; color:#155724; }
+.attendance-badge.absent { background:#f8d7da; color:#721c24; }
+
+.present-btn { background:#28a745; color:white; border:none; padding:8px 16px; border-radius:4px; cursor:pointer; font-weight:600; margin-right:8px; transition:background 0.2s; }
+.present-btn:hover { background:#218838; }
+.present-btn:disabled { background:#ccc; cursor:not-allowed; }
+
+.absent-btn { background:#dc3545; color:white; border:none; padding:8px 16px; border-radius:4px; cursor:pointer; font-weight:600; transition:background 0.2s; }
+.absent-btn:hover { background:#c82333; }
+.absent-btn:disabled { background:#ccc; cursor:not-allowed; }
+
